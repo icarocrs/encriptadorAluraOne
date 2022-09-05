@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>ENCRIPTADOR ONE</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="./assets/logo-alura.svg" alt="Logo Alura"></h1>
+    </header>
+
+    <main class="container">
+        <section class="section-ask">
+            <input id="input-container" placeholder="Digite seu texto"/>
+            
+            <div class="div-btn-container">
+                <p> <img id="img-section-ask" src="./assets/exclamation.svg" width="10px">Apenas letras minúsculas e sem acento.</p>
+                <button class="btn-container" type="button" onclick="encrypt()" >Encriptar</button>
+                <button class="btn-container" type="button" onclick="decrypt()" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="section-response">
+            <img id="img-section-response" src="./assets/people.svg" alt="Imagem de pessoa segurando uma lupa." width="300px">
+            <p class="first-paragraph">Nenhuma mensagem encontrada</p>
+            <p class="second-paragraph"><i>Digite um texto que você deseja criptografar ou descriptografar.</i></p>
+            <button id="btn-section-response" type="button" onclick="copyToClickBoard()" >Copiar</button>
+            <button id="btn-section-response-refresh" type="button">Reiniciar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer" >Copyrigth &copy Mariana Moioli Capelari - 2022</p>
+    </footer>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
